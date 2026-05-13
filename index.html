@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepper Survival Guides</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/194cc5471e.js" crossorigin="anonymous"></script>
+</head>
+<body id="top">
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav__container">
+            <ul class="nav__links">
+                <li><a href="#top" class="nav__link">Home</a></li>
+                <li><a href="#books" class="nav__link">Books</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Prepper Survival Guides</h1>
+        <p>A powerful resource for emergency preparedness and survival tips.</p>
+    </header>
+
+    <!-- SECTION NAV -->
+    <nav class="section-nav">
+        <ul>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#water">Water</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#medical">Medical</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- BOOKS -->
+        <section id="books">
+            <h2>CHECK OUT THESE BOOKS AS WELL </h2>
+            <div class="books_header">
+                <select id="filter">
+                    <option value="">Sort</option>
+                    <option value="LOW_TO_HIGH">Price: Low to High</option>
+                    <option value="HIGH_TO_LOW">Price: High to Low</option>
+                    <option value="RATING">Rating</option>
+                </select>
+            </div>
+
+            <div class="books">
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./preppers bible.jpg" alt="Preppers Bible book cover featuring survival and emergency preparedness information">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$22.97</div>
+                </div>
+
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./prepp water.jpg" alt="Preppers Water book cover focused on water storage and purification techniques">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$17.95</div>
+                </div>
+
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./prep encyc.jpg" alt="Preppers Encyclopedia book cover providing comprehensive survival and emergency preparedness reference material">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$29.95</div>
+                </div>
+
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./medical prep .jpg" alt="Medical Prep book cover covering first aid and emergency medical supplies for preparedness">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$22.97</div>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./ult surv guide.jpg" alt="Ultimate Survival Guide book cover with comprehensive strategies and techniques for survival preparedness">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$34.95</div>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./medical surv.jpg" alt="Medical Survival book cover addressing emergency medical care and survival health considerations">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$29.95</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WATER -->
+        <section id="water">
+            <h2>Water Storage</h2>
+
+            <p>✓Store 1 gallon per person per day for 2 weeks (approx. 15 gallons/person)</p>
+               <p> ✓Consider storing water in food-grade containers and keeping them in a cool, dark place to prevent contamination.</p>
+            <button class="toggle">Toggle Checklist</button>
+            <ul class="checklist hidden">
+                <li>Water storage tanks</li>
+                <li>Portable filter</li>
+                <li>Purification tablets</li>
+            </ul>
+   
+        </section>
+
+        <!-- FOOD -->
+        <section id="food">
+            <h2>Food Storage</h2>
+            <p>✓ Store non-perishable food items for at least 2 weeks</p>
+             <p>✓ Don't forget to rotate your food supplies regularly to ensure freshness.</p>
+            <button class="toggle">Toggle Checklist</button>
+            <ul class="checklist hidden">
+                <li>Canned goods</li>
+                <li>Dry grains and pasta</li>
+                <li>Freeze-dried meals</li>
+            </ul>
+        
+        </section>
+
+        <!-- MEDICAL -->
+        <section id="medical">
+            <h2>Medical Supplies</h2>
+            <p>✓ Store essential medical supplies for at least 2 weeks</p>
+             <p> ✓ Consider including a manual on basic first aid and emergency medical procedures.</p>
+            <button class="toggle">Toggle Checklist</button>
+            <ul class="checklist hidden">
+                <li>First aid kit</li>
+                <li>Medications</li>
+                <li>Bandages</li>
+            </ul>
+           
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer__inner">
+            <figure class="footer__logo">
+                <img src="./kim logo 2.jpg" alt="Kim Jones brand logo featuring stylized K initial in purple circle with Kim Jones text below">
+            </figure>
+            <nav class="footer__nav">
+                <a href="#top" class="footer__link">Home</a>
+                <a href="#books" class="footer__link">Books</a>
+               
+            </nav>
+            <div class="footer__social-list">
+                <a href="#" class="footer__social-link">Github</a>
+                <a href="#" class="footer__social-link">LinkedIn</a>
+                <a href="./Kim%20Jones%20Resume%202025.docx" class="footer__social-link" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+            <div class="footer__contact-details">Contact: Kim.jones@gmail.com | 508-247-7650</div>
+        </div>
+        <div class="footer__copyright">Copyright © 2026 Kim Jones </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
