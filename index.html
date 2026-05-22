@@ -8,9 +8,10 @@
     <script src="https://kit.fontawesome.com/194cc5471e.js" crossorigin="anonymous"></script>
 </head>
 <body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- NAVBAR -->
-    <nav>
+    <nav aria-label="Primary navigation">
         <div class="nav__container">
             <ul class="nav__links">
                 <li><a href="#top" class="nav__link">Home</a></li>
@@ -27,7 +28,7 @@
     </header>
 
     <!-- SECTION NAV -->
-    <nav class="section-nav">
+    <nav class="section-nav" aria-label="Section navigation">
         <ul>
             <li><a href="#books">Books</a></li>
             <li><a href="#water">Water</a></li>
@@ -36,103 +37,99 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="main-content">
 
         <!-- BOOKS -->
-        <section id="books">
-            <h2>CHECK OUT THESE BOOKS AS WELL </h2>
+        <section id="books" aria-labelledby="books-title">
+            <h2 id="books-title">Prepper Gear And Book Picks</h2>
+            <p class="books__intro">Your original prepper picks are featured first, and live API results are below.</p>
+
+            <h3 class="books__subtitle">Featured Prepper Books</h3>
+            <div class="books featured-books" aria-label="Featured prepper books">
+                <article class="book">
+                    <img class="book__img" src="./assets/preppers bible.jpg" alt="Preppers Bible book cover">
+                    <h4 class="book__title">The Preppers Bible</h4>
+                    <div class="book__meta">
+                        <span class="book__badge">Book</span>
+                        <span class="book__price">$22.97</span>
+                    </div>
+                    <p class="book__rating">Prepper essential</p>
+                </article>
+
+                <article class="book">
+                    <img class="book__img" src="./assets/prepp water.jpg" alt="Prepper water storage guide book cover">
+                    <h4 class="book__title">Prepper Water</h4>
+                    <div class="book__meta">
+                        <span class="book__badge">Book</span>
+                        <span class="book__price">$17.95</span>
+                    </div>
+                    <p class="book__rating">Water planning focus</p>
+                </article>
+
+                <article class="book">
+                    <img class="book__img" src="./assets/prep encyc.jpg" alt="Prepper encyclopedia book cover">
+                    <h4 class="book__title">Prepper Encyclopedia</h4>
+                    <div class="book__meta">
+                        <span class="book__badge">Book</span>
+                        <span class="book__price">$29.95</span>
+                    </div>
+                    <p class="book__rating">Reference handbook</p>
+                </article>
+
+                <article class="book">
+                    <img class="book__img" src="./assets/medical prep .jpg" alt="Medical prep guide book cover">
+                    <h4 class="book__title">Medical Prep</h4>
+                    <div class="book__meta">
+                        <span class="book__badge">Book</span>
+                        <span class="book__price">$22.97</span>
+                    </div>
+                    <p class="book__rating">First aid and emergency care</p>
+                </article>
+
+                <article class="book">
+                    <img class="book__img" src="./assets/ult surv guide.jpg" alt="Ultimate survival guide book cover">
+                    <h4 class="book__title">Ultimate Survival Guide</h4>
+                    <div class="book__meta">
+                        <span class="book__badge">Book</span>
+                        <span class="book__price">$34.95</span>
+                    </div>
+                    <p class="book__rating">Advanced field strategies</p>
+                </article>
+
+                <article class="book">
+                    <img class="book__img" src="./assets/medical surv.jpg" alt="Medical survival book cover">
+                    <h4 class="book__title">Medical Survival</h4>
+                    <div class="book__meta">
+                        <span class="book__badge">Book</span>
+                        <span class="book__price">$29.95</span>
+                    </div>
+                    <p class="book__rating">Trauma and preparedness</p>
+                </article>
+            </div>
+
+            <h3 class="books__subtitle">Search Live Marketplace Results</h3>
             <div class="books_header">
-                <select id="filter">
-                    <option value="">Sort</option>
+                <label class="sr-only" for="search">Search products</label>
+                <input id="search" type="search" placeholder="Search by title or category" autocomplete="off">
+
+                <label class="sr-only" for="category-filter">Filter by category</label>
+                <select id="category-filter">
+                    <option value="ALL">All categories</option>
+                </select>
+
+                <label class="sr-only" for="sort-filter">Sort products</label>
+                <select id="sort-filter">
+                    <option value="DEFAULT">Sort: Recommended</option>
                     <option value="LOW_TO_HIGH">Price: Low to High</option>
                     <option value="HIGH_TO_LOW">Price: High to Low</option>
-                    <option value="RATING">Rating</option>
+                    <option value="RATING">Top Rated</option>
                 </select>
+
+                <button id="reset-filters" type="button">Reset</button>
             </div>
-
-            <div class="books">
-                <div class="book">
-                    <figure>
-                        <img class="book__img" src="./assets/preppers bible.jpg" alt="Preppers Bible book cover featuring survival and emergency preparedness information">
-                    </figure>
-                    <div class="book__rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="book__price">$22.97</div>
-                </div>
-
-                <div class="book">
-                    <figure>
-                        <img class="book__img" src="./assets/prepp water.jpg" alt="Preppers Water book cover focused on water storage and purification techniques">
-                    </figure>
-                    <div class="book__rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="book__price">$17.95</div>
-                </div>
-
-                <div class="book">
-                    <figure>
-                        <img class="book__img" src="./assets/prep encyc.jpg" alt="Preppers Encyclopedia book cover providing comprehensive survival and emergency preparedness reference material">
-                    </figure>
-                    <div class="book__rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="book__price">$29.95</div>
-                </div>
-
-                <div class="book">
-                    <figure>
-                        <img class="book__img" src="./assets/medical prep .jpg" alt="Medical Prep book cover covering first aid and emergency medical supplies for preparedness">
-                    </figure>
-                    <div class="book__rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="book__price">$22.97</div>
-                </div>
-                <div class="book">
-                    <figure>
-                        <img class="book__img" src="./assets/ult surv guide.jpg" alt="Ultimate Survival Guide book cover with comprehensive strategies and techniques for survival preparedness">
-                    </figure>
-                    <div class="book__rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="book__price">$34.95</div>
-                </div>
-                <div class="book">
-                    <figure>
-                        <img class="book__img" src="./assets/medical surv.jpg" alt="Medical Survival book cover addressing emergency medical care and survival health considerations">
-                    </figure>
-                    <div class="book__rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="book__price">$29.95</div>
-                </div>
-            </div>
+            <div class="books" id="books-results" aria-live="polite" aria-busy="true"></div>
+            <p class="status" id="results-status" role="status" aria-live="polite">Loading products...</p>
+            <div class="pagination" id="pagination-controls" aria-label="Results pagination"></div>
         </section>
 
         <!-- WATER -->
@@ -141,8 +138,8 @@
 
             <p>✓Store 1 gallon per person per day for 2 weeks (approx. 15 gallons/person)</p>
                <p> ✓Consider storing water in food-grade containers and keeping them in a cool, dark place to prevent contamination.</p>
-            <button class="toggle">Toggle Checklist</button>
-            <ul class="checklist hidden">
+            <button class="toggle" aria-expanded="false" aria-controls="water-checklist">Toggle Checklist</button>
+            <ul id="water-checklist" class="checklist hidden">
                 <li>Water storage tanks</li>
                 <li>Portable filter</li>
                 <li>Purification tablets</li>
@@ -155,8 +152,8 @@
             <h2>Food Storage</h2>
             <p>✓ Store non-perishable food items for at least 2 weeks</p>
              <p>✓ Don't forget to rotate your food supplies regularly to ensure freshness.</p>
-            <button class="toggle">Toggle Checklist</button>
-            <ul class="checklist hidden">
+            <button class="toggle" aria-expanded="false" aria-controls="food-checklist">Toggle Checklist</button>
+            <ul id="food-checklist" class="checklist hidden">
                 <li>Canned goods</li>
                 <li>Dry grains and pasta</li>
                 <li>Freeze-dried meals</li>
@@ -169,8 +166,8 @@
             <h2>Medical Supplies</h2>
             <p>✓ Store essential medical supplies for at least 2 weeks</p>
              <p> ✓ Consider including a manual on basic first aid and emergency medical procedures.</p>
-            <button class="toggle">Toggle Checklist</button>
-            <ul class="checklist hidden">
+            <button class="toggle" aria-expanded="false" aria-controls="medical-checklist">Toggle Checklist</button>
+            <ul id="medical-checklist" class="checklist hidden">
                 <li>First aid kit</li>
                 <li>Medications</li>
                 <li>Bandages</li>
@@ -184,7 +181,7 @@
     <footer id="contact">
         <div class="footer__inner">
             <figure class="footer__logo">
-                <img src="./assets/kim logo 2.jpg" alt="Kim Jones brand logo featuring stylized K initial in purple circle with Kim Jones text below">
+                <img src="./assets/books 1.svg" alt="Prepper logo icon">
             </figure>
             <nav class="footer__nav">
                 <a href="#top" class="footer__link">Home</a>
@@ -200,6 +197,8 @@
         </div>
         <div class="footer__copyright">Copyright © 2026 Kim Jones </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">Top</button>
 
     <script src="script.js"></script>
 </body>
